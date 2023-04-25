@@ -1,11 +1,19 @@
+from math import pi
+
+"""Este es mi pull request a Pablo"""
 class Circulo:
+
     _radio:float
 
     def __init__(self,radio:float):
-        self._radio=radio
+        self._radio = radio
     
+    #Método área del círculo
     def area(self):
-        pass
+        area = self._radio **2 * pi
+        return area
 
-    def circunferencia(self):
-        pass
+    #Método circunferencia del círculo
+    def circunferencia(self, _radio):
+        circunferencia = self._radio * 2 * pi
+        return circunferencia
